@@ -1,0 +1,1127 @@
+<!DOCTYPE html>
+<html lang="hi-IN" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>आज की राशिफल – सभी 12 राशियों का दैनिक राशिफल</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="आज की राशिफल (Aaj Ki Rashifal): मेष, वृषभ, मिथुन, कर्क, सिंह, कन्या, तुला, वृश्चिक, धनु, मकर, कुंभ और मीन राशि का आज का सटीक एवं निःशुल्क दैनिक राशिफल, प्रेम, करियर, धन और स्वास्थ्य स्थिति पढ़ें।">
+    <meta name="keywords" content="आज की राशिफल, आज का राशिफल, दैनिक राशिफल, 12 राशियां, मेष राशि आज की राशिफल, सिंह राशि आज की राशिफल, कुंभ राशि आज की राशिफल, आज की राशिफल बताइए">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <link rel="canonical" href="https://aajkirashifal.example.com/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="hi_IN">
+    <meta property="og:url" content="https://aajkirashifal.example.com/">
+    <meta property="og:title" content="आज की राशिफल – सभी 12 राशियों का दैनिक राशिफल">
+    <meta property="og:description" content="अपनी राशि चुनें और जानें आज का प्रेम, करियर, व्यापार, वित्त और स्वास्थ्य राशिफल। निःशुल्क एवं सटीक ज्योतिषीय मार्गदर्शन।">
+    <meta property="og:image" content="https://placehold.co/1200x630/161233/ffd700?text=%E0%A4%AE%E0%A5%8B%E0%A4%9C%E0%A4%BF%E0%A4%95+%E0%A4%86%E0%A4%9C+%E0%A4%95%E0%A5%80+%E0%A4%B0%E0%A4%BE%E0%A4%B6%E0%A4%BF%E0%A4%AB%E0%A4%B2">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="आज की राशिफल – सभी 12 राशियों का दैनिक राशिफल">
+    <meta name="twitter:description" content="अपनी राशि चुनें और जानें आज का प्रेम, करियर, व्यापार, वित्त और स्वास्थ्य राशिफल।">
+    <meta name="twitter:image" content="https://placehold.co/1200x630/161233/ffd700?text=%E0%A4%AE%E0%A5%8B%E0%A4%9C%E0%A4%BF%E0%A4%95+%E0%A4%86%E0%A4%9C+%E0%A4%95%E0%A5%80+%E0%A4%B0%E0%A4%BE%E0%A4%B6%E0%A4%BF%E0%A4%AB%E0%A4%B2">
+
+    <!-- Fonts & Tailwind CSS CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            400: '#f6d365',
+                            500: '#d4af37',
+                            600: '#b8860b',
+                            700: '#996515',
+                        },
+                        cosmic: {
+                            900: '#0b0818',
+                            800: '#140f2b',
+                            700: '#1f193f',
+                            600: '#2d2458',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Noto Sans Devanagari"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #0b0818;
+            color: #e2e8f0;
+            font-family: 'Noto Sans Devanagari', sans-serif;
+            overflow-x: hidden;
+        }
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #fff2a3 0%, #d4af37 50%, #aa7c11 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gold-border-glow {
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            box-shadow: 0 0 15px rgba(212, 175, 55, 0.15);
+        }
+        .gold-border-glow:hover {
+            border-color: rgba(212, 175, 55, 0.8);
+            box-shadow: 0 0 25px rgba(212, 175, 55, 0.35);
+        }
+        .glass-card {
+            background: rgba(31, 25, 63, 0.65);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .rashi-card-active {
+            border-color: #d4af37 !important;
+            background: linear-gradient(145deg, rgba(45, 36, 88, 0.9), rgba(20, 15, 43, 0.95)) !important;
+            box-shadow: 0 0 20px rgba(212, 175, 55, 0.4) !important;
+            transform: translateY(-4px);
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0b0818;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #2d2458;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #d4af37;
+        }
+    </style>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "आज की राशिफल",
+      "url": "https://aajkirashifal.example.com/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://aajkirashifal.example.com/?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "आज की राशिफल क्या है?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "आज की राशिफल ग्रहों और नक्षत्रों की चाल के आधार पर आपकी राशि के लिए तैयार किया गया दैनिक ज्योतिषीय पूर्वानुमान है। इससे आपको प्रेम, करियर, स्वास्थ्य और वित्त से जुड़े संकेतों का पता चलता है।"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "अपनी राशि का आज का राशिफल कैसे देखें?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "हमारी वेबसाइट पर दिए गए 12 राशि कार्ड्स में से अपनी राशि (जैसे मेष, सिंह, कुंभ आदि) पर क्लिक करें। क्लिक करते ही आज का राशिफल तुरंत आपके सामने आ जाएगा।"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "क्या दैनिक राशिफल 100% निश्चित भविष्यवाणी है?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "नहीं, दैनिक राशिफल एक सामान्य ज्योतिषीय आकलन होता है। इसे जीवन की संभावनाओं को समझने के लिए मार्गदर्शन के रूप में लेना चाहिए, किसी निश्चित घटना या विशेषज्ञ सलाह के रूप में नहीं।"
+          }
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="min-h-screen flex flex-col justify-between selection:bg-gold-500 selection:text-cosmic-900">
+
+    <header class="sticky top-0 z-50 glass-card border-b border-gold-500/20 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Brand Logo -->
+                <a href="#" onclick="showPage('home')" class="flex items-center space-x-3 group">
+                    <div class="w-12 h-12 rounded-full bg-gradient-to-tr from-gold-600 via-gold-400 to-amber-200 flex items-center justify-center shadow-lg group-hover:scale-105 transition-transform duration-300">
+                        <span class="text-cosmic-900 font-extrabold text-2xl">🕉️</span>
+                    </div>
+                    <div>
+                        <span class="text-2xl font-extrabold gold-gradient-text tracking-wide">आज की राशिफल</span>
+                        <p class="text-[10px] text-amber-200/70 tracking-wider">दैनिक ज्योतिष एवं भविष्यफल</p>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden md:flex items-center space-x-1 lg:space-x-3 text-sm font-medium">
+                    <button onclick="showPage('home')" class="nav-btn px-3 py-2 rounded-lg text-slate-200 hover:text-gold-400 hover:bg-cosmic-700/50 transition">होम</button>
+                    <button onclick="scrollToRashifal()" class="nav-btn px-3 py-2 rounded-lg text-slate-200 hover:text-gold-400 hover:bg-cosmic-700/50 transition">आज की राशिफल</button>
+                    <button onclick="scrollToRashiGrid()" class="nav-btn px-3 py-2 rounded-lg text-slate-200 hover:text-gold-400 hover:bg-cosmic-700/50 transition">12 राशियां</button>
+                    <button onclick="showPage('about')" class="nav-btn px-3 py-2 rounded-lg text-slate-200 hover:text-gold-400 hover:bg-cosmic-700/50 transition">हमारे बारे में</button>
+                    <button onclick="showPage('contact')" class="nav-btn px-3 py-2 rounded-lg text-slate-200 hover:text-gold-400 hover:bg-cosmic-700/50 transition">संपर्क करें</button>
+                    <button onclick="showPage('privacy')" class="nav-btn px-3 py-2 rounded-lg text-slate-200 hover:text-gold-400 hover:bg-cosmic-700/50 transition">प्राइवेसी</button>
+                    <button onclick="showPage('disclaimer')" class="nav-btn px-3 py-2 rounded-lg text-slate-200 hover:text-gold-400 hover:bg-cosmic-700/50 transition">डिस्क्लेमर</button>
+                </nav>
+
+                <!-- Mobile Hamburger Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" type="button" class="text-gold-400 hover:text-white p-2 rounded-md focus:outline-none" aria-label="Toggle Navigation">
+                        <svg class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path id="menu-icon-open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                            <path id="menu-icon-close" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Drawer -->
+        <div id="mobile-menu" class="hidden md:hidden glass-card border-b border-gold-500/20 px-4 pt-2 pb-6 space-y-2">
+            <button onclick="showPage('home'); toggleMobileMenu()" class="block w-full text-left px-4 py-2.5 rounded-lg text-slate-200 hover:bg-cosmic-700 hover:text-gold-400">होम</button>
+            <button onclick="scrollToRashifal(); toggleMobileMenu()" class="block w-full text-left px-4 py-2.5 rounded-lg text-slate-200 hover:bg-cosmic-700 hover:text-gold-400">आज की राशिफल</button>
+            <button onclick="scrollToRashiGrid(); toggleMobileMenu()" class="block w-full text-left px-4 py-2.5 rounded-lg text-slate-200 hover:bg-cosmic-700 hover:text-gold-400">12 राशियां</button>
+            <button onclick="showPage('about'); toggleMobileMenu()" class="block w-full text-left px-4 py-2.5 rounded-lg text-slate-200 hover:bg-cosmic-700 hover:text-gold-400">हमारे बारे में</button>
+            <button onclick="showPage('contact'); toggleMobileMenu()" class="block w-full text-left px-4 py-2.5 rounded-lg text-slate-200 hover:bg-cosmic-700 hover:text-gold-400">संपर्क करें</button>
+            <button onclick="showPage('privacy'); toggleMobileMenu()" class="block w-full text-left px-4 py-2.5 rounded-lg text-slate-200 hover:bg-cosmic-700 hover:text-gold-400">प्राइवेसी पॉलिसी</button>
+            <button onclick="showPage('disclaimer'); toggleMobileMenu()" class="block w-full text-left px-4 py-2.5 rounded-lg text-slate-200 hover:bg-cosmic-700 hover:text-gold-400">अस्वीकरण (Disclaimer)</button>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        
+        <!-- ================= PAGE 1: HOME PAGE ================= -->
+        <div id="page-home" class="page-view space-y-12 py-8">
+            
+            <!-- Hero Banner -->
+            <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative">
+                <div class="absolute inset-0 -z-10 flex items-center justify-center">
+                    <div class="w-96 h-96 bg-gold-500/10 rounded-full blur-3xl"></div>
+                    <div class="w-80 h-80 bg-purple-600/10 rounded-full blur-3xl"></div>
+                </div>
+
+                <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass-card border border-gold-500/30 mb-6 text-sm font-medium text-gold-400">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                    दैनिक सटीक ज्योतिषीय फलादेश
+                </div>
+
+                <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white mb-4">
+                    आज की राशिफल — <span class="gold-gradient-text">अपनी राशि चुनें</span>
+                </h1>
+                <p class="text-base sm:text-lg text-slate-300 max-w-3xl mx-auto leading-relaxed">
+                    ग्रह-नक्षत्रों के आधार पर आज का दिन आपके प्रेम, करियर, व्यापार, धन और स्वास्थ्य के लिए कैसा रहेगा? अपनी राशि पर क्लिक करें और तुरंत आज का संपूर्ण राशिफल पढ़ें।
+                </p>
+
+                <!-- Date Picker Controls Header -->
+                <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4 bg-cosmic-800/80 border border-gold-500/30 p-4 rounded-2xl max-w-xl mx-auto shadow-2xl">
+                    <div class="flex items-center space-x-2 text-gold-400 font-medium">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                        <span id="current-date-display" class="text-lg font-bold text-white">आज का तिथि: ...</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <label for="date-picker" class="text-xs text-slate-400">तारीख बदलें:</label>
+                        <input type="date" id="date-picker" class="bg-cosmic-900 text-gold-400 border border-gold-500/40 rounded-lg px-3 py-1.5 text-sm focus:outline-none focus:border-gold-400">
+                    </div>
+                </div>
+            </section>
+
+            <section id="rashi-grid-section" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-8">
+                    <h2 class="text-2xl sm:text-3xl font-bold text-white">अपनी राशि चुनें और आज का राशिफल पढ़ें</h2>
+                    <p class="text-slate-400 text-sm mt-1">12 राशियों में से अपनी राशि पर टैप करें</p>
+                </div>
+
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+                    <!-- Cards will be populated by Javascript, but here is static structure baseline -->
+                    <button onclick="selectRashi('mesh')" id="btn-mesh" class="rashi-card glass-card gold-border-glow p-5 rounded-2xl flex flex-col items-center justify-center text-center transition-all duration-300 group">
+                        <div class="w-14 h-14 rounded-full bg-cosmic-800 border border-gold-500/30 flex items-center justify-center text-3xl mb-3 group-hover:scale-110 transition-transform">♈</div>
+                        <span class="text-lg font-bold text-white group-hover:text-gold-400">मेष</span>
+                        <span class="text-xs text-slate-400 font-light">Aries</span>
+                    </button>
+
+                    <button onclick="selectRashi('vrishabh')" id="btn-vrishabh" class="rashi-card glass-card gold-border-glow p-5 rounded-2xl flex flex-col items-center justify-center text-center transition-all duration-300 group">
+                        <div class="w-14 h-14 rounded-full bg-cosmic-800 border border-gold-500/30 flex items-center justify-center text-3xl mb-3 group-hover:scale-110 transition-transform">♉</div>
+                        <span class="text-lg font-bold text-white group-hover:text-gold-400">वृषभ</span>
+                        <span class="text-xs text-slate-400 font-light">Taurus</span>
+                    </button>
+
+                    <button onclick="selectRashi('mithun')" id="btn-mithun" class="rashi-card glass-card gold-border-glow p-5 rounded-2xl flex flex-col items-center justify-center text-center transition-all duration-300 group">
+                        <div class="w-14 h-14 rounded-full bg-cosmic-800 border border-gold-500/30 flex items-center justify-center text-3xl mb-3 group-hover:scale-110 transition-transform">♊</div>
+                        <span class="text-lg font-bold text-white group-hover:text-gold-400">मिथुन</span>
+                        <span class="text-xs text-slate-400 font-light">Gemini</span>
+                    </button>
+
+                    <button onclick="selectRashi('kark')" id="btn-kark" class="rashi-card glass-card gold-border-glow p-5 rounded-2xl flex flex-col items-center justify-center text-center transition-all duration-300 group">
+                        <div class="w-14 h-14 rounded-full bg-cosmic-800 border border-gold-500/30 flex items-center justify-center text-3xl mb-3 group-hover:scale-110 transition-transform">♋</div>
+                        <span class="text-lg font-bold text-white group-hover:text-gold-400">कर्क</span>
+                        <span class="text-xs text-slate-400 font-light">Cancer</span>
+                    </button>
+
+                    <button onclick="selectRashi('singh')" id="btn-singh" class="rashi-card glass-card gold-border-glow p-5 rounded-2xl flex flex-col items-center justify-center text-center transition-all duration-300 group">
+                        <div class="w-14 h-14 rounded-full bg-cosmic-800 border border-gold-500/30 flex items-center justify-center text-3xl mb-3 group-hover:scale-110 transition-transform">♌</div>
+                        <span class="text-lg font-bold text-white group-hover:text-gold-400">सिंह</span>
+                        <span class="text-xs text-slate-400 font-light">Leo</span>
+                    </button>
+
+                    <button onclick="selectRashi('kanya')" id="btn-kanya" class="rashi-card glass-card gold-border-glow p-5 rounded-2xl flex flex-col items-center justify-center text-center transition-all duration-300 group">
+                        <div class="w-14 h-14 rounded-full bg-cosmic-800 border border-gold-500/30 flex items-center justify-center text-3xl mb-3 group-hover:scale-110 transition-transform">♍</div>
+                        <span class="text-lg font-bold text-white group-hover:text-gold-400">कन्या</span>
+                        <span class="text-xs text-slate-400 font-light">Virgo</span>
+                    </button>
+
+                    <button onclick="selectRashi('tula')" id="btn-tula" class="rashi-card glass-card gold-border-glow p-5 rounded-2xl flex flex-col items-center justify-center text-center transition-all duration-300 group">
+                        <div class="w-14 h-14 rounded-full bg-cosmic-800 border border-gold-500/30 flex items-center justify-center text-3xl mb-3 group-hover:scale-110 transition-transform">♎</div>
+                        <span class="text-lg font-bold text-white group-hover:text-gold-400">तुला</span>
+                        <span class="text-xs text-slate-400 font-light">Libra</span>
+                    </button>
+
+                    <button onclick="selectRashi('vrishchik')" id="btn-vrishchik" class="rashi-card glass-card gold-border-glow p-5 rounded-2xl flex flex-col items-center justify-center text-center transition-all duration-300 group">
+                        <div class="w-14 h-14 rounded-full bg-cosmic-800 border border-gold-500/30 flex items-center justify-center text-3xl mb-3 group-hover:scale-110 transition-transform">♏</div>
+                        <span class="text-lg font-bold text-white group-hover:text-gold-400">वृश्चिक</span>
+                        <span class="text-xs text-slate-400 font-light">Scorpio</span>
+                    </button>
+
+                    <button onclick="selectRashi('dhanu')" id="btn-dhanu" class="rashi-card glass-card gold-border-glow p-5 rounded-2xl flex flex-col items-center justify-center text-center transition-all duration-300 group">
+                        <div class="w-14 h-14 rounded-full bg-cosmic-800 border border-gold-500/30 flex items-center justify-center text-3xl mb-3 group-hover:scale-110 transition-transform">♐</div>
+                        <span class="text-lg font-bold text-white group-hover:text-gold-400">धनु</span>
+                        <span class="text-xs text-slate-400 font-light">Sagittarius</span>
+                    </button>
+
+                    <button onclick="selectRashi('makar')" id="btn-makar" class="rashi-card glass-card gold-border-glow p-5 rounded-2xl flex flex-col items-center justify-center text-center transition-all duration-300 group">
+                        <div class="w-14 h-14 rounded-full bg-cosmic-800 border border-gold-500/30 flex items-center justify-center text-3xl mb-3 group-hover:scale-110 transition-transform">♑</div>
+                        <span class="text-lg font-bold text-white group-hover:text-gold-400">मकर</span>
+                        <span class="text-xs text-slate-400 font-light">Capricorn</span>
+                    </button>
+
+                    <button onclick="selectRashi('kumbh')" id="btn-kumbh" class="rashi-card glass-card gold-border-glow p-5 rounded-2xl flex flex-col items-center justify-center text-center transition-all duration-300 group">
+                        <div class="w-14 h-14 rounded-full bg-cosmic-800 border border-gold-500/30 flex items-center justify-center text-3xl mb-3 group-hover:scale-110 transition-transform">♒</div>
+                        <span class="text-lg font-bold text-white group-hover:text-gold-400">कुंभ</span>
+                        <span class="text-xs text-slate-400 font-light">Aquarius</span>
+                    </button>
+
+                    <button onclick="selectRashi('meen')" id="btn-meen" class="rashi-card glass-card gold-border-glow p-5 rounded-2xl flex flex-col items-center justify-center text-center transition-all duration-300 group">
+                        <div class="w-14 h-14 rounded-full bg-cosmic-800 border border-gold-500/30 flex items-center justify-center text-3xl mb-3 group-hover:scale-110 transition-transform">♓</div>
+                        <span class="text-lg font-bold text-white group-hover:text-gold-400">मीन</span>
+                        <span class="text-xs text-slate-400 font-light">Pisces</span>
+                    </button>
+                </div>
+            </section>
+
+            <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="glass-card p-6 rounded-2xl border border-gold-500/20">
+                    <h3 class="text-lg font-bold text-gold-400 mb-3 flex items-center gap-2">
+                        <span>🔍</span> अपनी राशि का आज का राशिफल खोजें
+                    </h3>
+                    <div class="flex flex-wrap gap-2 text-xs sm:text-sm">
+                        <button onclick="selectRashi('mesh')" class="px-3 py-1.5 rounded-lg bg-cosmic-800 border border-slate-700 text-slate-300 hover:border-gold-500 hover:text-gold-400 transition">आज की राशिफल मेष</button>
+                        <button onclick="selectRashi('mesh')" class="px-3 py-1.5 rounded-lg bg-cosmic-800 border border-slate-700 text-slate-300 hover:border-gold-500 hover:text-gold-400 transition">मेष राशि आज की राशिफल</button>
+                        <button onclick="selectRashi('vrishabh')" class="px-3 py-1.5 rounded-lg bg-cosmic-800 border border-slate-700 text-slate-300 hover:border-gold-500 hover:text-gold-400 transition">आज की राशिफल वृषभ</button>
+                        <button onclick="selectRashi('mithun')" class="px-3 py-1.5 rounded-lg bg-cosmic-800 border border-slate-700 text-slate-300 hover:border-gold-500 hover:text-gold-400 transition">आज की राशिफल मिथुन</button>
+                        <button onclick="selectRashi('kark')" class="px-3 py-1.5 rounded-lg bg-cosmic-800 border border-slate-700 text-slate-300 hover:border-gold-500 hover:text-gold-400 transition">आज की राशिफल कर्क</button>
+                        <button onclick="selectRashi('singh')" class="px-3 py-1.5 rounded-lg bg-cosmic-800 border border-slate-700 text-slate-300 hover:border-gold-500 hover:text-gold-400 transition">आज की राशिफल सिंह</button>
+                        <button onclick="selectRashi('singh')" class="px-3 py-1.5 rounded-lg bg-cosmic-800 border border-slate-700 text-slate-300 hover:border-gold-500 hover:text-gold-400 transition">सिंह राशि आज की राशिफल</button>
+                        <button onclick="selectRashi('kanya')" class="px-3 py-1.5 rounded-lg bg-cosmic-800 border border-slate-700 text-slate-300 hover:border-gold-500 hover:text-gold-400 transition">आज की राशिफल कन्या</button>
+                        <button onclick="selectRashi('tula')" class="px-3 py-1.5 rounded-lg bg-cosmic-800 border border-slate-700 text-slate-300 hover:border-gold-500 hover:text-gold-400 transition">तुला राशि आज की राशिफल</button>
+                        <button onclick="selectRashi('vrishchik')" class="px-3 py-1.5 rounded-lg bg-cosmic-800 border border-slate-700 text-slate-300 hover:border-gold-500 hover:text-gold-400 transition">वृश्चिक राशि आज की राशिफल</button>
+                        <button onclick="selectRashi('dhanu')" class="px-3 py-1.5 rounded-lg bg-cosmic-800 border border-slate-700 text-slate-300 hover:border-gold-500 hover:text-gold-400 transition">आज की राशिफल धनु</button>
+                        <button onclick="selectRashi('makar')" class="px-3 py-1.5 rounded-lg bg-cosmic-800 border border-slate-700 text-slate-300 hover:border-gold-500 hover:text-gold-400 transition">आज की राशिफल मकर</button>
+                        <button onclick="selectRashi('kumbh')" class="px-3 py-1.5 rounded-lg bg-cosmic-800 border border-slate-700 text-slate-300 hover:border-gold-500 hover:text-gold-400 transition">कुंभ राशि आज की राशिफल</button>
+                        <button onclick="selectRashi('meen')" class="px-3 py-1.5 rounded-lg bg-cosmic-800 border border-slate-700 text-slate-300 hover:border-gold-500 hover:text-gold-400 transition">आज की राशिफल मीन</button>
+                    </div>
+                </div>
+            </section>
+
+            <section id="rashifal-display-section" class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 scroll-mt-24">
+                <div class="glass-card p-6 sm:p-10 rounded-3xl border border-gold-500/30 shadow-2xl relative overflow-hidden">
+                    
+                    <!-- Top Rashi Header Info -->
+                    <div class="flex flex-col sm:flex-row items-center justify-between border-b border-slate-700/60 pb-6 mb-8 gap-4">
+                        <div class="flex items-center space-x-4">
+                            <div id="active-rashi-icon" class="w-16 h-16 rounded-2xl bg-gradient-to-br from-gold-500 to-amber-700 flex items-center justify-center text-4xl shadow-lg text-cosmic-900 font-bold">
+                                ♈
+                            </div>
+                            <div>
+                                <h2 id="active-rashi-title" class="text-2xl sm:text-3xl font-extrabold text-white">
+                                    आज की राशिफल मेष राशि
+                                </h2>
+                                <p id="active-rashi-date" class="text-sm text-gold-400 font-medium mt-1">
+                                    आज का राशिफल — 26 सितंबर 2026
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-3 bg-cosmic-900/80 px-4 py-2.5 rounded-xl border border-gold-500/20">
+                            <div class="text-center px-3 border-r border-slate-700">
+                                <span class="text-[10px] text-slate-400 block uppercase tracking-wider">शुभ रंग</span>
+                                <span id="active-rashi-color" class="text-sm font-bold text-gold-400">लाल</span>
+                            </div>
+                            <div class="text-center px-3">
+                                <span class="text-[10px] text-slate-400 block uppercase tracking-wider">शुभ अंक</span>
+                                <span id="active-rashi-number" class="text-sm font-bold text-amber-300">9</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Rashifal Content Categories Grid -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        
+                        <!-- General Overview -->
+                        <div class="md:col-span-2 bg-cosmic-800/60 p-5 rounded-2xl border border-gold-500/10">
+                            <h3 class="text-lg font-bold text-gold-400 mb-2 flex items-center gap-2">
+                                <span>✨</span> आज का सामान्य राशिफल
+                            </h3>
+                            <p id="content-general" class="text-slate-300 leading-relaxed">
+                                आज आपके लिए ऊर्जा और उत्साह से भरा दिन रहेगा। कार्यक्षेत्र में नए विचार मन में आएंगे जो भविष्य के लिए लाभकारी सिद्ध होंगे। अपने विचारों को स्पष्टता से व्यक्त करें।
+                            </p>
+                        </div>
+
+                        <!-- Love -->
+                        <div class="bg-cosmic-800/60 p-5 rounded-2xl border border-rose-500/20">
+                            <h3 class="text-lg font-bold text-rose-300 mb-2 flex items-center gap-2">
+                                <span>❤️</span> प्रेम और संबंध
+                            </h3>
+                            <p id="content-love" class="text-slate-300 text-sm leading-relaxed">
+                                जीवनसाथी के साथ सामंजस्य बना रहेगा। आपसी समझ मजबूत होगी। सिंगल लोगों के जीवन में किसी नए मित्र का आगमन हो सकता है।
+                            </p>
+                        </div>
+
+                        <!-- Career -->
+                        <div class="bg-cosmic-800/60 p-5 rounded-2xl border border-blue-500/20">
+                            <h3 class="text-lg font-bold text-blue-300 mb-2 flex items-center gap-2">
+                                <span>💼</span> करियर और नौकरी
+                            </h3>
+                            <p id="content-career" class="text-slate-300 text-sm leading-relaxed">
+                                नौकरीपेशा जातकों को कार्यस्थल पर उच्च अधिकारियों की सराहना मिलेगी। अटके हुए काम गति पकड़ेंगे।
+                            </p>
+                        </div>
+
+                        <!-- Business -->
+                        <div class="bg-cosmic-800/60 p-5 rounded-2xl border border-amber-500/20">
+                            <h3 class="text-lg font-bold text-amber-300 mb-2 flex items-center gap-2">
+                                <span>📈</span> व्यापार
+                            </h3>
+                            <p id="content-business" class="text-slate-300 text-sm leading-relaxed">
+                                व्यावसायिक मामलों में सोच-समझकर निर्णय लें। नए समझौते करते समय कागजी कार्रवाई ध्यान से जांचें।
+                            </p>
+                        </div>
+
+                        <!-- Finance -->
+                        <div class="bg-cosmic-800/60 p-5 rounded-2xl border border-emerald-500/20">
+                            <h3 class="text-lg font-bold text-emerald-300 mb-2 flex items-center gap-2">
+                                <span>💰</span> धन और वित्त
+                            </h3>
+                            <p id="content-finance" class="text-slate-300 text-sm leading-relaxed">
+                                वित्तीय स्थिति सामान्य रहेगी। अनावश्यक खर्चों पर नियंत्रण रखें। निवेश के लिए समय अनुकूल है।
+                            </p>
+                        </div>
+
+                        <!-- Health -->
+                        <div class="bg-cosmic-800/60 p-5 rounded-2xl border border-teal-500/20">
+                            <h3 class="text-lg font-bold text-teal-300 mb-2 flex items-center gap-2">
+                                <span>🌿</span> स्वास्थ्य
+                            </h3>
+                            <p id="content-health" class="text-slate-300 text-sm leading-relaxed">
+                                स्वास्थ्य उत्तम रहेगा। नियमित योग व संतुलित आहार से दिनभर ऊर्जावान महसूस करेंगे।
+                            </p>
+                        </div>
+
+                        <!-- Family -->
+                        <div class="bg-cosmic-800/60 p-5 rounded-2xl border border-purple-500/20">
+                            <h3 class="text-lg font-bold text-purple-300 mb-2 flex items-center gap-2">
+                                <span>👨‍👩‍👧‍👦</span> परिवार
+                            </h3>
+                            <p id="content-family" class="text-slate-300 text-sm leading-relaxed">
+                                पारिवारिक माहौल खुशनुमा रहेगा। परिजनों के साथ मांगलिक कार्यों की चर्चा संभव है।
+                            </p>
+                        </div>
+
+                        <!-- Daily Tip -->
+                        <div class="md:col-span-2 bg-gradient-to-r from-gold-600/20 via-amber-600/20 to-cosmic-800 p-5 rounded-2xl border border-gold-500/30">
+                            <h3 class="text-lg font-bold text-gold-400 mb-1 flex items-center gap-2">
+                                <span>💡</span> आज की विशेष सलाह
+                            </h3>
+                            <p id="content-advice" class="text-slate-200 text-sm font-medium">
+                                जल्दबाजी में कोई भी महत्वपूर्ण निर्णय न लें। बड़ों का मार्गदर्शन अवश्य लें।
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <!-- Mandatory Astrology Disclaimer -->
+                    <div class="mt-8 pt-4 border-t border-slate-800 text-center text-xs text-slate-400">
+                        <p>⚠️ <strong>ज्योतिषीय डिस्क्लेमर:</strong> यह राशिफल सामान्य ज्योतिषीय जानकारी और ग्रह गणनाओं पर आधारित है। इसे निश्चित भविष्यवाणी या विशेषज्ञ सलाह के रूप में न लें।</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="glass-card p-6 sm:p-10 rounded-3xl border border-gold-500/20 space-y-6 text-slate-300 leading-relaxed">
+                    <h2 class="text-2xl sm:text-3xl font-extrabold text-white gold-gradient-text">
+                        आज का राशिफल क्या है? संपूर्ण ज्योतिषीय मार्गदर्शन
+                    </h2>
+                    
+                    <p>
+                        वैदिक ज्योतिष में <strong>आज की राशिफल</strong> का अत्यधिक महत्व है। हमारे ब्रह्मांड में सूर्य, चंद्रमा और अन्य ग्रहों की निरंतर बदलती चाल का प्रत्येक मनुष्य के जीवन पर गहरा प्रभाव पड़ता है। ज्योतिष शास्त्र के अनुसार, व्यक्ति की जन्म राशि और वर्तमान ग्रह स्थिति के आधार पर उसके दैनिक जीवन का आकलन किया जाता है।
+                    </p>
+
+                    <h3 class="text-xl font-bold text-gold-400">12 राशियों का दैनिक राशिफल</h3>
+                    <p>
+                        ज्योतिष चक्र को 12 मुख्य राशियों में विभाजित किया गया है। प्रत्येक राशि का अपना स्वामी ग्रह और तत्त्व होता है:
+                    </p>
+                    <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-slate-300 bg-cosmic-900/60 p-4 rounded-xl border border-slate-800">
+                        <li>• <strong>मेष राशि:</strong> अग्नि तत्त्व, स्वामी मंगल ग्रह</li>
+                        <li>• <strong>वृषभ राशि:</strong> पृथ्वी तत्त्व, स्वामी शुक्र ग्रह</li>
+                        <li>• <strong>मिथुन राशि:</strong> वायु तत्त्व, स्वामी बुध ग्रह</li>
+                        <li>• <strong>कर्क राशि:</strong> जल तत्त्व, स्वामी चंद्रमा</li>
+                        <li>• <strong>सिंह राशि:</strong> अग्नि तत्त्व, स्वामी सूर्य ग्रह</li>
+                        <li>• <strong>कन्या राशि:</strong> पृथ्वी तत्त्व, स्वामी बुध ग्रह</li>
+                        <li>• <strong>तुला राशि:</strong> वायु तत्त्व, स्वामी शुक्र ग्रह</li>
+                        <li>• <strong>वृश्चिक राशि:</strong> जल तत्त्व, स्वामी मंगल ग्रह</li>
+                        <li>• <strong>धनु राशि:</strong> अग्नि तत्त्व, स्वामी बृहस्पति</li>
+                        <li>• <strong>मकर राशि:</strong> पृथ्वी तत्त्व, स्वामी शनि ग्रह</li>
+                        <li>• <strong>कुंभ राशि:</strong> वायु तत्त्व, स्वामी शनि ग्रह</li>
+                        <li>• <strong>मीन राशि:</strong> जल तत्त्व, स्वामी बृहस्पति</li>
+                    </ul>
+
+                    <h3 class="text-xl font-bold text-gold-400">अपनी राशि अनुसार दैनिक राशिफल कैसे पढ़ें?</h3>
+                    <p>
+                        दैनिक राशिफल को पढ़ते समय ध्यान रखें कि यह एक सामान्य भविष्यवाणी है जो आपकी चंद्र राशि (Moon Sign) या सूर्य राशि (Sun Sign) पर आधारित हो सकती है। अपने दिन की योजना बनाते समय दैनिक राशिफल से संकेत लें:
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm mt-2">
+                        <div class="bg-cosmic-800/80 p-4 rounded-xl border border-slate-700">
+                            <h4 class="font-bold text-gold-400 mb-1">❤️ प्रेम राशिफल</h4>
+                            <p class="text-xs text-slate-400">वैवाहिक व प्रेम संबंधों में सुख और सामंजस्य के संकेत देता है।</p>
+                        </div>
+                        <div class="bg-cosmic-800/80 p-4 rounded-xl border border-slate-700">
+                            <h4 class="font-bold text-gold-400 mb-1">💼 करियर व धन</h4>
+                            <p class="text-xs text-slate-400">नौकरी, व्यवसाय और आर्थिक लाभ-हानी के अवसरों को दर्शाता है।</p>
+                        </div>
+                        <div class="bg-cosmic-800/80 p-4 rounded-xl border border-slate-700">
+                            <h4 class="font-bold text-gold-400 mb-1">🌿 स्वास्थ्य राशिफल</h4>
+                            <p class="text-xs text-slate-400">शारीरिक स्वास्थ्य, मानसिक शांति और सावधानियों का बोध कराता है।</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="glass-card p-6 sm:p-10 rounded-3xl border border-gold-500/20">
+                    <h2 class="text-2xl sm:text-3xl font-extrabold text-white mb-6 text-center">
+                        आज की राशिफल से जुड़े सामान्य सवाल (FAQ)
+                    </h2>
+
+                    <div class="space-y-4" id="faq-accordion">
+                        <div class="bg-cosmic-800/80 rounded-xl border border-slate-700 overflow-hidden">
+                            <button onclick="toggleFaq('faq1')" class="w-full text-left p-4 font-bold text-slate-200 hover:text-gold-400 flex justify-between items-center">
+                                <span>आज की राशिफल क्या है?</span>
+                                <span id="icon-faq1" class="text-gold-400 text-xl font-mono">+</span>
+                            </button>
+                            <div id="faq1" class="hidden px-4 pb-4 text-sm text-slate-300 border-t border-slate-700/50 pt-3">
+                                आज की राशिफल ग्रहों और नक्षत्रों की गोचर स्थिति के आधार पर 12 राशियों के लिए तैयार किया गया दैनिक भविष्यफल है। यह आपके दिनभर के संभावित उतार-चढ़ाव की जानकारी प्रदान करता है।
+                            </div>
+                        </div>
+
+                        <div class="bg-cosmic-800/80 rounded-xl border border-slate-700 overflow-hidden">
+                            <button onclick="toggleFaq('faq2')" class="w-full text-left p-4 font-bold text-slate-200 hover:text-gold-400 flex justify-between items-center">
+                                <span>आज का राशिफल कैसे देखें?</span>
+                                <span id="icon-faq2" class="text-gold-400 text-xl font-mono">+</span>
+                            </button>
+                            <div id="faq2" class="hidden px-4 pb-4 text-sm text-slate-300 border-t border-slate-700/50 pt-3">
+                                हमारी वेबसाइट पर ऊपर दिए गए 12 राशि कार्डों में से अपनी राशि (जैसे मेष, वृषभ, मिथुन आदि) पर क्लिक करें। क्लिक करते ही तुरंत आपका संपूर्ण आज का राशिफल स्क्रीन पर आ जाएगा।
+                            </div>
+                        </div>
+
+                        <div class="bg-cosmic-800/80 rounded-xl border border-slate-700 overflow-hidden">
+                            <button onclick="toggleFaq('faq3')" class="w-full text-left p-4 font-bold text-slate-200 hover:text-gold-400 flex justify-between items-center">
+                                <span>क्या दैनिक राशिफल 100% निश्चित होता है?</span>
+                                <span id="icon-faq3" class="text-gold-400 text-xl font-mono">+</span>
+                            </button>
+                            <div id="faq3" class="hidden px-4 pb-4 text-sm text-slate-300 border-t border-slate-700/50 pt-3">
+                                नहीं, दैनिक राशिफल सामान्य ज्योतिषीय फलादेश होता है। इसे एक सकारात्मक मार्गदर्शन के रूप में देखना चाहिए। महत्वपूर्ण निर्णय अपने विवेक और विशेषज्ञों की सलाह से लें।
+                            </div>
+                        </div>
+
+                        <div class="bg-cosmic-800/80 rounded-xl border border-slate-700 overflow-hidden">
+                            <button onclick="toggleFaq('faq4')" class="w-full text-left p-4 font-bold text-slate-200 hover:text-gold-400 flex justify-between items-center">
+                                <span>सिंह और कुंभ राशि का आज का राशिफल कैसे जानें?</span>
+                                <span id="icon-faq4" class="text-gold-400 text-xl font-mono">+</span>
+                            </button>
+                            <div id="faq4" class="hidden px-4 pb-4 text-sm text-slate-300 border-t border-slate-700/50 pt-3">
+                                आप सीधे होम पेज पर सिंह (♌) या कुंभ (♒) राशि के आइकॉन पर टैप करके या त्वरित सर्च लिंक पर क्लिक करके आज का राशिफल देख सकते हैं।
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+        <!-- ================= PAGE 2: ABOUT US PAGE ================= -->
+        <div id="page-about" class="page-view hidden max-w-4xl mx-auto px-4 py-12">
+            <div class="glass-card p-8 sm:p-12 rounded-3xl border border-gold-500/30 space-y-6">
+                <h1 class="text-3xl font-extrabold text-white gold-gradient-text border-b border-slate-700 pb-4">
+                    हमारे बारे में (About Us)
+                </h1>
+                
+                <h2 class="text-xl font-bold text-gold-400">वेबसाइट का उद्देश्य</h2>
+                <p class="text-slate-300 leading-relaxed">
+                    <strong>आज की राशिफल</strong> वेबसाइट का मुख्य उद्देश्य सभी 12 राशियों के जातकों को सरल, सुगम और हिंदी भाषा में दैनिक ज्योतिषीय फलादेश उपलब्ध कराना है। हम आधुनिक तकनीक और प्राचीन वैदिक ज्योतिषीय सिद्धांतों का एक संतुलित संगम प्रस्तुत करते हैं।
+                </p>
+
+                <h2 class="text-xl font-bold text-gold-400">हमारी कंटेंट फिलॉसफी (Content Philosophy)</h2>
+                <p class="text-slate-300 leading-relaxed">
+                    हमारा मानना है कि ज्योतिष जीवन को दिशा देने और सजग बनाने का एक माध्यम है। हम कभी भी किसी झूठे दावे, 100% गारंटेड भविष्यवाणियों या अंधविश्वास को बढ़ावा नहीं देते। हमारे द्वारा दी जाने वाली सभी जानकारियां सामान्य ग्रह चाल के आधार पर होती हैं।
+                </p>
+
+                <h2 class="text-xl font-bold text-gold-400">आसान उपयोगकर्ता अनुभव</h2>
+                <p class="text-slate-300 leading-relaxed">
+                    आप बिना किसी कठिन रजिस्ट्रेशन के सीधे अपनी राशि चुनकर आज का राशिफल पढ़ सकते हैं। हमारी वेबसाइट मोबाइल और डेस्कटॉप दोनों पर अत्यंत तीव्र गति से कार्य करती है।
+                </p>
+            </div>
+        </div>
+
+
+        <!-- ================= PAGE 3: CONTACT US PAGE ================= -->
+        <div id="page-contact" class="page-view hidden max-w-3xl mx-auto px-4 py-12">
+            <div class="glass-card p-8 sm:p-12 rounded-3xl border border-gold-500/30 space-y-6">
+                <h1 class="text-3xl font-extrabold text-white gold-gradient-text border-b border-slate-700 pb-4">
+                    संपर्क करें (Contact Us)
+                </h1>
+                <p class="text-slate-300 text-sm">
+                    यदि आपके पास कोई प्रश्न, सुझाव या फीडबैक है, तो कृपया नीचे दिए गए फॉर्म के माध्यम से हमसे संपर्क करें।
+                </p>
+
+                <!-- Feedback Banner -->
+                <div id="contact-success" class="hidden p-4 rounded-xl bg-emerald-500/20 border border-emerald-500 text-emerald-300 text-sm">
+                    ✅ आपका संदेश सफलतापूर्वक दर्ज कर लिया गया है! हम जल्द ही आपसे संपर्क करेंगे।
+                </div>
+
+                <form id="contact-form" onsubmit="handleContactSubmit(event)" class="space-y-4">
+                    <div>
+                        <label class="block text-xs font-medium text-slate-300 mb-1">आपका नाम</label>
+                        <input type="text" required placeholder="अपना पूरा नाम दर्ज करें" class="w-full bg-cosmic-900 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-gold-400">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-medium text-slate-300 mb-1">ईमेल पता</label>
+                        <input type="email" required placeholder="name@example.com" class="w-full bg-cosmic-900 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-gold-400">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-medium text-slate-300 mb-1">विषय</label>
+                        <input type="text" required placeholder="विषय दर्ज करें" class="w-full bg-cosmic-900 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-gold-400">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-medium text-slate-300 mb-1">संदेश</label>
+                        <textarea rows="4" required placeholder="अपना संदेश यहाँ लिखें..." class="w-full bg-cosmic-900 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-gold-400"></textarea>
+                    </div>
+                    <button type="submit" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-gold-500 to-amber-600 text-cosmic-900 font-bold hover:brightness-110 transition shadow-lg">
+                        संदेश भेजें
+                    </button>
+                </form>
+
+                <div class="pt-4 border-t border-slate-800 text-xs text-slate-400 text-center">
+                    आप सीधे ईमेल भी कर सकते हैं: <a href="mailto:contact@example.com" class="text-gold-400 font-medium hover:underline">contact@example.com</a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- ================= PAGE 4: PRIVACY POLICY PAGE ================= -->
+        <div id="page-privacy" class="page-view hidden max-w-4xl mx-auto px-4 py-12">
+            <div class="glass-card p-8 sm:p-12 rounded-3xl border border-gold-500/30 space-y-6 text-slate-300">
+                <h1 class="text-3xl font-extrabold text-white gold-gradient-text border-b border-slate-700 pb-4">
+                    प्राइवेसी पॉलिसी (Privacy Policy)
+                </h1>
+
+                <p class="text-sm">
+                    यह गोपनीयता नीति इस बात को स्पष्ट करती है कि <strong>आज की राशिफल</strong> वेबसाइट किस प्रकार से यूजर की जानकारी का उपयोग व सुरक्षा करती है।
+                </p>
+
+                <h2 class="text-lg font-bold text-gold-400">1. सूचना का संग्रह</h2>
+                <p class="text-sm">
+                    हम आपकी किसी भी प्रकार की व्यक्तिगत संवेदनशील जानकारी (जैसे बैंक खाता, आधार संख्या आदि) एकत्र नहीं करते हैं। यदि आप संपर्क फॉर्म का उपयोग करते हैं, तो केवल नाम व ईमेल ही प्राप्त होता है।
+                </p>
+
+                <h2 class="text-lg font-bold text-gold-400">2. कुकीज़ (Cookies) व एनालिटिक्स</h2>
+                <p class="text-sm">
+                    वेबसाइट के प्रदर्शन व बेहतर अनुभव के लिए हम सामान्य एनालिटिक्स व ब्राउज़र कुकीज़ का उपयोग कर सकते हैं। आप अपने ब्राउज़र सेटिंग्स से कुकीज़ को ब्लॉक कर सकते हैं।
+                </p>
+
+                <h2 class="text-lg font-bold text-gold-400">3. तृतीय-पक्ष सेवाएं (Third-Party Services)</h2>
+                <p class="text-sm">
+                    हम भविष्य में विज्ञापन नेटवर्क (जैसे Google AdSense) का उपयोग कर सकते हैं, जो उपयोगकर्ता की रुचि के अनुसार विज्ञापन दिखाने के लिए कुकीज़ का प्रयोग कर सकते हैं।
+                </p>
+            </div>
+        </div>
+
+
+        <!-- ================= PAGE 5: DISCLAIMER PAGE ================= -->
+        <div id="page-disclaimer" class="page-view hidden max-w-4xl mx-auto px-4 py-12">
+            <div class="glass-card p-8 sm:p-12 rounded-3xl border border-gold-500/30 space-y-6 text-slate-300">
+                <h1 class="text-3xl font-extrabold text-white gold-gradient-text border-b border-slate-700 pb-4">
+                    अस्वीकरण (Disclaimer)
+                </h1>
+
+                <div class="p-4 rounded-xl bg-amber-500/10 border border-amber-500/30 text-amber-200 text-sm font-medium">
+                    यह वेबसाइट केवल सामान्य मनोरंजन व ज्योतिषीय जानकारी के उद्देश्य से बनाई गई है।
+                </div>
+
+                <p class="text-sm leading-relaxed">
+                    1. <strong>सामान्य जानकारी:</strong> 'आज की राशिफल' पर प्रकाशित दैनिक राशिफल सामान्य ग्रह गणनाओं पर आधारित होता है। इसे किसी व्यक्ति विशेष की सटीक जीवन घटना मान लेना उचित नहीं है।
+                </p>
+                <p class="text-sm leading-relaxed">
+                    2. <strong>विशेषज्ञ सलाह नहीं:</strong> स्वास्थ्य, वित्तीय निर्णय, कानूनी मामलों या किसी भी बड़े व्यक्तिगत निर्णय के लिए कृपया संबंधित प्रमाणित विशेषज्ञों और डॉक्टरों से सलाह अवश्य लें।
+                </p>
+                <p class="text-sm leading-relaxed">
+                    3. <strong>गारंटी का अभाव:</strong> हम भविष्य में होने वाली घटनाओं के सही होने का कोई भी दावा या 100% गारंटी नहीं देते हैं।
+                </p>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="glass-card border-t border-gold-500/20 mt-16 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-3">
+                        <span class="text-2xl">🕉️</span>
+                        <span class="text-xl font-extrabold gold-gradient-text">आज की राशिफल</span>
+                    </div>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        सभी 12 राशियों का दैनिक राशिफल, प्रेम, करियर, धन और स्वास्थ्य फलादेश। हिंदी में सबसे सरल एवं तेज़ ज्योतिषीय पोर्टल।
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="text-sm font-bold text-gold-400 mb-3 uppercase tracking-wider">त्वरित लिंक</h4>
+                    <ul class="space-y-2 text-xs text-slate-300">
+                        <li><button onclick="showPage('home')" class="hover:text-gold-400 transition">होम</button></li>
+                        <li><button onclick="scrollToRashifal()" class="hover:text-gold-400 transition">आज का राशिफल</button></li>
+                        <li><button onclick="showPage('about')" class="hover:text-gold-400 transition">हमारे बारे में</button></li>
+                        <li><button onclick="showPage('contact')" class="hover:text-gold-400 transition">संपर्क करें</button></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-sm font-bold text-gold-400 mb-3 uppercase tracking-wider">कानूनी नीतियां</h4>
+                    <ul class="space-y-2 text-xs text-slate-300">
+                        <li><button onclick="showPage('privacy')" class="hover:text-gold-400 transition">प्राइवेसी पॉलिसी</button></li>
+                        <li><button onclick="showPage('disclaimer')" class="hover:text-gold-400 transition">अस्वीकरण (Disclaimer)</button></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-slate-800 pt-6 text-center text-xs text-slate-500">
+                © 2026 Aaj Ki Rashifal. सर्वाधिकार सुरक्षित।
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const RASHI_DATA = {
+            mesh: {
+                name: "मेष",
+                english: "Aries",
+                icon: "♈",
+                color: "लाल / नारंगी",
+                number: "9",
+                general: "आज आपका आत्मविश्वास चरम पर रहेगा। रुके हुए कार्य पूरे होंगे और नए विचार मन में उत्साह भरेंगे। सकारात्मक सोच के साथ दिन की शुरुआत करें।",
+                love: "प्रेम जीवन में मिठास बनी रहेगी। पार्टनर के साथ समय बिताने से आपसी संबंध और मजबूत होंगे।",
+                career: "नौकरीपेशा लोगों को कार्यक्षेत्र में पदोन्नति या नई जिम्मेदारी मिल सकती है। सहकर्मियों का पूरा सहयोग मिलेगा।",
+                business: "व्यापार में नए सौदे होने की संभावना है। आर्थिक लाभ होगा, लेकिन किसी पर अंधा भरोसा न करें।",
+                finance: "आर्थिक स्थिति मजबूत रहेगी। रुका हुआ धन वापस मिल सकता है। निवेश से पूर्व विचार अवश्य करें।",
+                health: "स्वास्थ्य सामान्य रहेगा। मानसिक शांति हेतु ध्यान और हल्का योग लाभकारी रहेगा।",
+                family: "पारिवारिक माहौल सुखद रहेगा। छोटे भाई-बहनों का सहयोग प्राप्त होगा।",
+                advice: "क्रोध पर नियंत्रण रखें और बातचीत में सौम्यता बनाए रखें।"
+            },
+            vrishabh: {
+                name: "वृषभ",
+                english: "Taurus",
+                icon: "♉",
+                color: "सफेद / चमकीला हरा",
+                number: "6",
+                general: "आज का दिन सुख-सुविधाओं में वृद्धि लाएगा। कला और संगीत के प्रति रुचि बढ़ेगी। धैर्य से काम लें।",
+                love: "जीवनसाथी का पूरा सहयोग मिलेगा। पुराने मतभेद दूर होंगे और रिश्तों में निकटता आएगी।",
+                career: "कार्यस्थल पर आपकी मेहनत की सराहना होगी। वरिष्ठ अधिकारियों का समर्थन मिलेगा।",
+                business: "व्यवसाय में स्थिरता बनी रहेगी। किसी नए प्रोजेक्ट पर काम शुरू करने का अच्छा दिन है।",
+                finance: "धन प्राप्ति के योग हैं। अचानक खर्चे आ सकते हैं, इसलिए बजट बनाकर चलें।",
+                health: "खानपान का ध्यान रखें। पेट से संबंधित समस्या हो सकती है, हल्का भोजन लें।",
+                family: "परिवार में मांगलिक कार्य की रूपरेखा बन सकती है। सदस्यों के बीच सामंजस्य रहेगा।",
+                advice: "अनावश्यक जिद करने से बचें और दूसरों के विचारों का सम्मान करें।"
+            },
+            mithun: {
+                name: "मिथुन",
+                english: "Gemini",
+                icon: "♊",
+                color: "हरा / पीला",
+                number: "5",
+                general: "आज आपकी संवाद शैली से लोग प्रभावित होंगे। बौद्धिक कार्यों में सफलता मिलेगी। नई योजनाएं बनेंगी।",
+                love: "लव पार्टनर के साथ संवाद बेहतर होगा। छोटी यात्रा की संभावना बन सकती है।",
+                career: "आईटी, मीडिया और सेल्स क्षेत्र से जुड़े लोगों के लिए आज का दिन विशेष रूप से शुभ है।",
+                business: "व्यापार में नए साझेदार मिल सकते हैं। व्यावसायिक यात्रा लाभदायक रहेगी।",
+                finance: "आर्थिक स्थिति में सुधार होगा। अचानक धन लाभ हो सकता है।",
+                health: "मानसिक रूप से तरोताजा महसूस करेंगे। पर्याप्त नींद लें।",
+                family: "घर में रिश्तेदारों का आना-जाना हो सकता है। माहौल आनंदमय रहेगा।",
+                advice: "अपनी योजनाओं को गुप्त रखें, समय आने पर ही उजागर करें।"
+            },
+            kark: {
+                name: "कर्क",
+                english: "Cancer",
+                icon: "♋",
+                color: "सफेद / सिल्वर",
+                number: "2",
+                general: "आज भावनाप्रधान दिन रहेगा। माता-पिता के प्रति सेवा भाव बढ़ेगा। पुराने मित्रों से मुलाकात होगी।",
+                love: "संबंधों में भावुकता अधिक रहेगी। पार्टनर की भावनाओं की कद्र करें।",
+                career: "नौकरी में शांति बनाए रखें। सहकर्मियों के साथ अनबन से बचें।",
+                business: "रियल एस्टेट व प्रॉपर्टी संबंधित कार्यों में लाभ की संभावना है।",
+                finance: "धन का आवक बना रहेगा, लेकिन संचय करने में थोड़ी परेशानी आ सकती है।",
+                health: "मौसम परिवर्तन का असर स्वास्थ्य पर पड़ सकता है। गुनगुना पानी पीएं।",
+                family: "पारिवारिक निर्णय लेते समय बड़े-बुजुर्गों की राय अवश्य लें।",
+                advice: "जरूरत से ज्यादा भावुक न हों, व्यावहारिक दृष्टिकोण अपनाएं।"
+            },
+            singh: {
+                name: "सिंह",
+                english: "Leo",
+                icon: "♌",
+                color: "सुनहरा / केसरिया",
+                number: "1",
+                general: "आज आपका नेतृत्व गुण निखर कर सामने आएगा। समाज में मान-प्रतिष्ठा बढ़ेगी। ऊर्जावान महसूस करेंगे।",
+                love: "दांपत्य जीवन में मधुरता रहेगी। पार्टनर के लिए कोई विशेष उपहार ले सकते हैं।",
+                career: "प्रशासनिक व प्रबंधन से जुड़े लोगों को बड़ी सफलता मिल सकती है।",
+                business: "कारोबार में विस्तार के अवसर मिलेंगे। नया निवेश लाभप्रद रहेगा।",
+                finance: "आर्थिक पक्ष बहुत मजबूत रहेगा। पुराने कर्ज चुकता करने में सफलता मिलेगी।",
+                health: "ऊर्जा का स्तर अच्छा रहेगा। योग-व्यायाम जारी रखें।",
+                family: "परिवार में आपका प्रभाव बढ़ेगा। बच्चे पढ़ाई में अच्छा प्रदर्शन करेंगे।",
+                advice: "अहंकार से बचें और सभी के साथ विनम्र व्यवहार रखें।"
+            },
+            kanya: {
+                name: "कन्या",
+                english: "Virgo",
+                icon: "♍",
+                color: "गहरा हरा / नीला",
+                number: "7",
+                general: "आज का दिन विश्लेषणात्मक कार्यों के लिए उपयुक्त है। बारीकियों पर ध्यान देंगे जिससे काम में निखार आएगा।",
+                love: "संबधों में स्पष्टता रखें। किसी भी गलतफहमी को बातचीत से सुलझाएं।",
+                career: "अकादमिक व रिसर्च से जुड़े लोगों को उत्कृष्ट परिणाम प्राप्त होंगे।",
+                business: "लेखा-जोखा ठीक रखें। नए व्यावसायिक अनुबंध सोच-समझकर करें।",
+                finance: "अनावश्यक खर्चों पर लगाम लगाने में सफल रहेंगे। बचत बढ़ेगी।",
+                health: "त्वचा या पेट संबंधी छोटी समस्या हो सकती है। जल का सेवन अधिक करें।",
+                family: "परिवार के साथ किसी धार्मिक स्थल की यात्रा का कार्यक्रम बन सकता है।",
+                advice: "अत्यधिक आलोचनात्मक होने से बचें, दूसरों की सराहना करें।"
+            },
+            tula: {
+                name: "तुला",
+                english: "Libra",
+                icon: "♎",
+                color: "गुलाबी / नीला",
+                number: "6",
+                general: "आज संतुलन और सामंजस्य बनाए रखने का दिन है। कलात्मक क्षेत्रों में रुचि बढ़ेगी। निर्णय लेने में जल्दबाजी न करें।",
+                love: "प्रेम संबंधों में मजबूती आएगी। पार्टनर के साथ खुशनुमा समय बीतेगा।",
+                career: "टीम वर्क से काम करने पर सफलता मिलेगी। सहकर्मियों का सहयोग रहेगा।",
+                business: "फैशन, सौंदर्य व रचनात्मक क्षेत्र के व्यापारियों को विशेष लाभ होगा।",
+                finance: "आर्थिक स्थिति स्थिर रहेगी। सुख-सुविधा की वस्तुओं पर खर्च हो सकता है।",
+                health: "पीठ या कमर में दर्द की शिकायत हो सकती है। posture का ध्यान रखें।",
+                family: "घर का वातावरण शांतिपूर्ण रहेगा। जीवनसाथी का भरपूर साथ मिलेगा।",
+                advice: "द्वंद्व की स्थिति में अनुभवी व्यक्ति से सलाह लें।"
+            },
+            vrishchik: {
+                name: "वृश्चिक",
+                english: "Scorpio",
+                icon: "♏",
+                color: "लाल / मैरून",
+                number: "8",
+                general: "आज आपका मन अनुसंधान व गूढ़ विद्याओं की ओर आकर्षित होगा। एकाग्रता में वृद्धि होगी।",
+                love: "रिश्तों में गहराई और निष्ठा बढ़ेगी। एक-दूसरे पर विश्वास मजबूत होगा।",
+                career: "गुप्त शत्रुओं से सावधान रहें। अपने काम पर ध्यान केंद्रित रखें।",
+                business: "अचानक लाभ के योग बन रहे हैं। जोखिम भरे निवेश से बचें।",
+                finance: "आर्थिक स्थिति में उतार-चढ़ाव संभव है। बजट का कड़ाई से पालन करें।",
+                health: "मानसिक तनाव से बचें। नियमित वॉक करना हितकर होगा।",
+                family: "परिवार के सदस्यों के साथ किसी पुरानी बात पर चर्चा हो सकती है।",
+                advice: "अपनी बातें सभी से शेयर न करें, गोपनीयता बनाए रखें।"
+            },
+            dhanu: {
+                name: "धनु",
+                english: "Sagittarius",
+                icon: "♐",
+                color: "पीला / नारंगी",
+                number: "3",
+                general: "आज का दिन भाग्यशाली रहेगा। अध्यात्म व उच्च शिक्षा की ओर झुकाव रहेगा। नया सीखने को मिलेगा।",
+                love: "सिंगल जातकों के जीवन में किसी खास की एंट्री हो सकती है। रिश्ते पक्के हो सकते हैं।",
+                career: "उच्च शिक्षा व विदेशी कंपनियों से जुड़े लोगों को अच्छी खबर मिलेगी।",
+                business: "व्यापार में तरक्की के नए रास्ते खुलेंगे। लंबी दूरी की यात्रा लाभप्रद रहेगी।",
+                finance: "आर्थिक लाभ के अच्छे अवसर प्राप्त होंगे। धन संचय होगा।",
+                health: "स्वास्थ्य उत्तम रहेगा। सकारात्मक विचार मन को प्रसन्न रखेंगे।",
+                family: "पिता व गुरुजनों का आशीर्वाद मिलेगा। पारिवारिक प्रतिष्ठा बढ़ेगी।",
+                advice: "दूसरों को सलाह देने से पहले उनकी बात ध्यान से सुनें।"
+            },
+            makar: {
+                name: "मकर",
+                english: "Capricorn",
+                icon: "♑",
+                color: "नीला / काला",
+                number: "4",
+                general: "आज परिश्रम का फल मिलेगा। अपने काम के प्रति आपकी निष्ठा आपको नई ऊंचाइयों पर ले जाएगी।",
+                love: "जीवनसाथी के साथ गंतव्य योजना बन सकती है। संबंध प्रगाढ़ होंगे।",
+                career: "नौकरी में पदोन्नति की संभावना है। वरिष्ठ अधिकारी आपके काम से प्रसन्न होंगे।",
+                business: "निर्माण व तकनीकी क्षेत्र के व्यवसायियों को बड़ा ऑर्डर मिल सकता है।",
+                finance: "वित्तीय मजबूती आएगी। अचल संपत्ति खरीदने का विचार बन सकता है।",
+                health: "जोड़ों में दर्द की समस्या हो सकती है। ठंड से बचाव रखें।",
+                family: "पारिवारिक जिम्मेदारियां बढ़ सकती हैं, जिन्हें आप बखूबी निभाएंगे।",
+                advice: "काम के साथ-साथ विश्राम के लिए भी समय निकालें।"
+            },
+            kumbh: {
+                name: "कुंभ",
+                english: "Aquarius",
+                icon: "♒",
+                color: "बैंगनी / आसमानी",
+                number: "8",
+                general: "आज आपकी सामाजिक सोच और नए विचार लोगों को आकर्षित करेंगे। समाज सेवा की ओर रुझान रहेगा।",
+                love: "मित्रता प्रेम संबंध में बदल सकती है। संबंधों में पारदर्शिता रखें।",
+                career: "इनोवेटिव आइडियाज से ऑफिस में आपकी पहचान बनेगी। प्रोत्साहन मिलेगा।",
+                business: "स्टार्टअप और नए आइडियाज पर काम करने का बिल्कुल सही समय है।",
+                finance: "आर्थिक स्थिति सामान्य से बेहतर रहेगी। मित्रों से सहयोग मिलेगा।",
+                health: "पैरों में थकान महसूस हो सकती है। पर्याप्त मात्रा में पानी पीएं।",
+                family: "भाइयों का सहयोग मिलेगा। घर में किसी आयोजन की रूपरेखा बनेगी।",
+                advice: "विचारों में स्पष्टता रखें और भ्रम की स्थिति से बचें।"
+            },
+            meen: {
+                name: "मीन",
+                english: "Pisces",
+                icon: "♓",
+                color: "पीला / समुद्री हरा",
+                number: "3",
+                general: "आज आपकी रचनात्मकता और कल्पनाशीलता शिखर पर रहेगी। कला व लेखन में सफलता मिलेगी।",
+                love: "पार्टनर के प्रति आपका भावनात्मक लगाव बढ़ेगा। रोमांटिक शाम बीतेगी।",
+                career: "रचनात्मक क्षेत्रों में काम करने वाले लोगों को विशेष उपलब्धि मिलेगी।",
+                business: "व्यापारिक सौदे लाभदायक रहेंगे। नए ग्राहकों से संपर्क बनेगा।",
+                finance: "अचानक धन आगमन के संकेत हैं। व्यर्थ के खर्चों से दूर रहें।",
+                health: "आंखों में जलन या थकान हो सकती है। स्क्रीन टाइम कम करें।",
+                family: "पारिवारिक माहौल बहुत ही सौहार्दपूर्ण और शांतिपूर्ण रहेगा।",
+                advice: "सपनों की दुनिया से निकलकर धरातल पर काम करें।"
+            }
+        };
+
+        const HINDI_MONTHS = [
+            "जनवरी", "फरवरी", "मार्च", "अप्रैल", "मई", "जून",
+            "जुलाई", "अगस्त", "सितंबर", "अक्टूबर", "नवंबर", "दिसंबर"
+        ];
+
+        function getFormattedHindiDate(dateObj) {
+            const day = dateObj.getDate();
+            const month = HINDI_MONTHS[dateObj.getMonth()];
+            const year = dateObj.getFullYear();
+            return `${day} ${month} ${year}`;
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const today = new Date();
+            
+            // Set date picker default to today YYYY-MM-DD
+            const isoToday = today.toISOString().split('T')[0];
+            const datePicker = document.getElementById("date-picker");
+            if(datePicker) {
+                datePicker.value = isoToday;
+                datePicker.addEventListener("change", function(e) {
+                    if(e.target.value) {
+                        const selectedDate = new Date(e.target.value);
+                        updateDateDisplay(selectedDate);
+                    }
+                });
+            }
+
+            updateDateDisplay(today);
+            selectRashi('mesh'); // Default active rashi
+
+            // Mobile menu event listeners
+            const mobileBtn = document.getElementById('mobile-menu-btn');
+            if(mobileBtn) {
+                mobileBtn.addEventListener('click', toggleMobileMenu);
+            }
+        });
+
+        function updateDateDisplay(dateObj) {
+            const hindiDateStr = getFormattedHindiDate(dateObj);
+            const dateSpan = document.getElementById("current-date-display");
+            const activeRashiDateSpan = document.getElementById("active-rashi-date");
+            
+            if(dateSpan) dateSpan.innerText = `आज का तिथि: ${hindiDateStr}`;
+            if(activeRashiDateSpan) activeRashiDateSpan.innerText = `आज का राशिफल — ${hindiDateStr}`;
+        }
+
+        function showPage(pageId) {
+            const pages = document.querySelectorAll('.page-view');
+            pages.forEach(p => p.classList.add('hidden'));
+
+            const targetPage = document.getElementById(`page-${pageId}`);
+            if(targetPage) {
+                targetPage.classList.remove('hidden');
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+        }
+
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            const openIcon = document.getElementById('menu-icon-open');
+            const closeIcon = document.getElementById('menu-icon-close');
+
+            if (mobileMenu.classList.contains('hidden')) {
+                mobileMenu.classList.remove('hidden');
+                openIcon.classList.add('hidden');
+                closeIcon.classList.remove('hidden');
+            } else {
+                mobileMenu.classList.add('hidden');
+                openIcon.classList.remove('hidden');
+                closeIcon.classList.add('hidden');
+            }
+        }
+
+        function scrollToRashifal() {
+            showPage('home');
+            const el = document.getElementById('rashifal-display-section');
+            if(el) el.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function scrollToRashiGrid() {
+            showPage('home');
+            const el = document.getElementById('rashi-grid-section');
+            if(el) el.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function selectRashi(rashiKey) {
+            showPage('home');
+
+            const data = RASHI_DATA[rashiKey];
+            if(!data) return;
+
+            // Highlight Active Card
+            const cards = document.querySelectorAll('.rashi-card');
+            cards.forEach(c => c.classList.remove('rashi-card-active'));
+
+            const activeCard = document.getElementById(`btn-${rashiKey}`);
+            if(activeCard) activeCard.classList.add('rashi-card-active');
+
+            // Update Header Information
+            document.getElementById('active-rashi-icon').innerText = data.icon;
+            document.getElementById('active-rashi-title').innerText = `आज की राशिफल ${data.name} राशि`;
+            document.getElementById('active-rashi-color').innerText = data.color;
+            document.getElementById('active-rashi-number').innerText = data.number;
+
+            // Update Detailed Content Cards
+            document.getElementById('content-general').innerText = data.general;
+            document.getElementById('content-love').innerText = data.love;
+            document.getElementById('content-career').innerText = data.career;
+            document.getElementById('content-business').innerText = data.business;
+            document.getElementById('content-finance').innerText = data.finance;
+            document.getElementById('content-health').innerText = data.health;
+            document.getElementById('content-family').innerText = data.family;
+            document.getElementById('content-advice').innerText = data.advice;
+
+            // Smooth Scroll to content
+            const displaySection = document.getElementById('rashifal-display-section');
+            if(displaySection && window.scrollY > 300) {
+                displaySection.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
+        function toggleFaq(faqId) {
+            const faqContent = document.getElementById(faqId);
+            const icon = document.getElementById(`icon-${faqId}`);
+
+            if(faqContent.classList.contains('hidden')) {
+                faqContent.classList.remove('hidden');
+                if(icon) icon.innerText = '−';
+            } else {
+                faqContent.classList.add('hidden');
+                if(icon) icon.innerText = '+';
+            }
+        }
+
+        function handleContactSubmit(e) {
+            e.preventDefault();
+            const successBanner = document.getElementById('contact-success');
+            if(successBanner) {
+                successBanner.classList.remove('hidden');
+            }
+            document.getElementById('contact-form').reset();
+        }
+    </script>
+</body>
+</html>
+<!-- eof -->
+```
+
+***
+
+### 📘 Complete Website Documentation & Shared Hosting Setup Guide
+
+#### 1. File Structure & Hosting Preparation
+This complete project is compiled into a single production-ready HTML file (`index.html`). To host it on shared hosting (like cPanel, Hostinger, Bluehost, Namecheap):
+* **Homepage File:** Save the generated code above as `index.html`.
+* **Sub-directories & Assets:** Create an empty `assets/` folder if you wish to upload custom icons or images in the future.
+
+#### 2. How to Create `robots.txt` & `sitemap.xml`
+Create these two files directly in the root directory (`public_html/`):
+
+**File 1: `robots.txt`**
+```text
+User-agent: *
+Allow: /
+Sitemap: https://yourdomain.com/sitemap.xml
+```
+
+**File 2: `sitemap.xml`**
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://yourdomain.com/</loc>
+    <lastmod>2026-09-26</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+</urlset>
+```
+
+---
+
+#### 3. Where to Edit Key Website Information
+
+1. **Domain Name & Canonical URLs:**
+   * Search for `https://aajkirashifal.example.com/` in `index.html` and replace it with your actual site URL (e.g., `https://aajkirashifal.com/`).
+2. **Contact Email:**
+   * Look inside the Contact page section (`#page-contact`) for `contact@example.com` and replace it with your email (e.g., `info@yourdomain.com`).
+3. **Updating Rashi Rashifal Readings:**
+   * Look inside the JavaScript block at `const RASHI_DATA = { ... }`.
+   * You can edit any zodiac sign's general overview, love, career, business, finance, health, family, tip, lucky color, or lucky number directly in natural Hindi text.
+4. **Keywords & SEO Tags:**
+   * Modify the `<meta name="description">` and `<title>` tags inside the `<head>` section.
+
+---
+
+#### 4. Step-by-Step Shared Hosting Upload Guide
+1. Log in to your hosting account (cPanel, File Manager, or FTP via FileZilla).
+2. Open the `public_html` folder (or your web root directory).
+3. Upload `index.html`, `robots.txt`, and `sitemap.xml`.
+4. Open your domain in any browser—your site is live, fully interactive, and instant-loading!
+
+---
+
+#### 5. Google Search Console & Sitemap Submission
+1. Go to [Google Search Console](https://search.google.com/search-console).
+2. Click **Add Property** and enter your domain name.
+3. Verify ownership via HTML file upload or TXT record in your domain's DNS.
+4. Navigate to **Sitemaps** on the left menu.
+5. Enter `sitemap.xml` and click **Submit**.
